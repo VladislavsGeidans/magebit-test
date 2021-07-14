@@ -1,0 +1,23 @@
+.header-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px;
+
+    .logo-box {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            position: relative;
+            top: -8px;
+            padding-right: 15px;
+        }
+
+        span {
+            color: $color-black;
+        }
+    }
+}

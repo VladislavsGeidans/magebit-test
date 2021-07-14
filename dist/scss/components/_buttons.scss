@@ -1,0 +1,79 @@
+.social-icon {
+    width: 46px;
+    height: 46px;
+    border: 2px solid $color-light-grey;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s;
+
+    &.facebook {
+        background-image: url('/public/images/ic_facebook.svg');
+
+       &:hover {
+            background-color: #4267B2;
+            background-image: url('/public/images/ic_facebook_white.svg');
+            box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+            border: 2px solid #4267B2;
+       }
+
+       &:active {
+            background-color: #2F4A80;
+            border: 2px solid #2F4A80;
+        }
+    }
+
+    &.instagram {
+        background-image: url('/public/images/ic_instagram.svg');
+
+        &:hover {
+            background-color: #C13584;
+            background-image: url('/public/images/ic_instagram_white.svg');
+            box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+            border: 2px solid #C13584;
+        }
+
+        &:active {
+            background-color: #8F2762;
+            border: 2px solid #8F2762;
+        }
+    }
+
+    &.twitter {
+        background-image: url('/public/images/ic_twitter.svg');
+
+        &:hover {
+            background-color: #1DA1F2;
+            background-image: url('/public/images/ic_twitter_white.svg');
+            box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+            border: 2px solid #1DA1F2;
+        }
+
+        &:active {
+            background-color: #177FBF;
+            border: 2px solid #177FBF;
+        }
+    }
+
+    &.youtube {
+        background-image: url('/public/images/ic_youtube.svg');
+
+        &:hover {
+            background-color: #FF0000;
+            background-image: url('/public/images/ic_youtube_white.svg');
+            box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+            border: 2px solid #FF0000;
+        }
+
+        &:active {
+            background-color: #CC0000;
+            border: 2px solid #CC0000;
+        }
+    }
+}

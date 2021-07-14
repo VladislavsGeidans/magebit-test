@@ -1,0 +1,123 @@
+.input-block {
+    position: relative;
+    transition: .3s;
+
+    input[type=email] {
+        width: 100%;
+        padding: 23px 0 23px 44px;
+        background: #FFFFFF;
+        border: 1px solid $color-light-grey;
+        box-sizing: border-box;
+        position: relative;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-grey;
+        transition: .3s;
+
+        &:hover {
+            border: 1px solid $color-blue;
+            color: $color-black;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background-color: $color-blue;
+        content: '';
+        z-index: 1;
+    }
+
+    &::after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0 40px;
+        width: 24px;
+        height: 100%;
+        content: '';
+        background-image: url('/public/images/ic_arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1;
+        transition: .3s;
+    }
+
+    &:focus {
+        box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+    }
+
+    &:hover {
+        color: $color-black;
+        box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+
+        &::after {
+            background-image: url('/public/images/ic_arrow_blue.svg');
+        }
+    }
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 21px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: $color-grey;
+    padding: 20px 0;
+    margin: 50px 0;
+  }
+  
+  .checkbox__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+    background: #FFFFFF;
+    border: 1px solid $color-light-grey;
+    box-sizing: border-box;
+  
+    img {
+      transition: transform 0.1s ease-in 25ms;
+      transform: scale(0);
+      transform-origin: bottom left;
+    }
+  }
+  
+  .checkbox__input {
+    display: grid;
+    grid-template-areas: "checkbox";
+  
+    > * {
+      grid-area: checkbox;
+    }
+  
+    input {
+      opacity: 0;
+      width: 1em;
+      height: 1em;
+
+      &:checked + .checkbox__control {
+          background-color: $color-blue;
+      }
+  
+      &:checked + .checkbox__control img {
+        transform: scale(1);
+      }
+    }
+  }

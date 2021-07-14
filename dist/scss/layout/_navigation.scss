@@ -1,0 +1,27 @@
+.nav-block {
+    display: flex;
+    align-items: center;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+
+        li {
+            list-style: none;
+            padding: 0 30px;
+
+            a {
+                text-decoration: none;
+                color: $color-grey;
+                transition: .3s;
+
+                &:hover {
+                    color: $color-black;
+                }
+            }
+        }
+    }
+}
