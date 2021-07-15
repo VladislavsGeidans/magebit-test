@@ -1,31 +1,8 @@
-.input-block {
+.input-box {
     position: relative;
+    display: flex;
+    flex-direction: row;
     transition: .3s;
-
-    input[type=email] {
-        width: 100%;
-        padding: 23px 0 23px 44px;
-        background: #FFFFFF;
-        border: 1px solid $color-light-grey;
-        box-sizing: border-box;
-        position: relative;
-        font-family: Arial;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-grey;
-        transition: .3s;
-
-        &:hover {
-            border: 1px solid $color-blue;
-            color: $color-black;
-        }
-
-        &:focus {
-            outline: none;
-        }
-    }
 
     &::before {
         position: absolute;
@@ -38,31 +15,68 @@
         z-index: 1;
     }
 
-    &::after {
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin: 0 40px;
-        width: 24px;
-        height: 100%;
-        content: '';
-        background-image: url('/public/images/ic_arrow.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        z-index: 1;
-        transition: .3s;
-    }
-
-    &:focus {
-        box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
-    }
-
     &:hover {
-        color: $color-black;
         box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
 
-        &::after {
+        input[type=text] {
+            border-top: 1px solid $color-blue;
+            border-bottom: 1px solid $color-blue;
+            border-left: 1px solid $color-blue;
+            color: $color-black;
+        }
+
+        input[type=submit] {
+            border-top: 1px solid $color-blue;
+            border-bottom: 1px solid $color-blue;
+            border-right: 1px solid $color-blue;
+            color: $color-black;
             background-image: url('/public/images/ic_arrow_blue.svg');
+        }
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 23px 0 23px 44px;
+        background: #FFF;
+        border-top: 1px solid $color-light-grey;
+        border-bottom: 1px solid $color-light-grey;
+        border-left: 1px solid $color-light-grey;
+        border-right: none;
+        box-sizing: border-box;
+        position: relative;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-grey;
+        transition: .3s;     
+        
+        &:focus {
+            outline: none;
+            box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+        }
+    }
+ 
+    input[type=submit] {
+        border: none;
+        background: #FFF;
+        border-top: 1px solid $color-light-grey;
+        border-bottom: 1px solid $color-light-grey;
+        border-right: 1px solid $color-light-grey;
+        border-left: none;
+        transition: .3s;
+        background-image: url('/public/images/ic_arrow.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0 28px;
+
+        &:focus {
+            outline: none;
+
+            .input-box {
+                box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+            }
         }
     }
 }
