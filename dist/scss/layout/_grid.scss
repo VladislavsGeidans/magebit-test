@@ -8,9 +8,7 @@ body {
     grid-template-rows: 1fr; 
     gap: 0px;
     grid-template-areas: "sidebar-block background-block";
-}
 
-.container {
     .sidebar-block {
         grid-area: sidebar-block;
         position: relative;
@@ -27,28 +25,36 @@ body {
             padding: 0 100px;
             position: relative;
             top: 100px;
+
+            .subscribe-block {
+                padding: 0 40px;
+
+                .input-block {
+                    margin: 40px -40px;
+                }
+            }
+
+            .line {
+                width: 100%;
+                height: 1px;
+                margin: 30px 0;
+                background-color: $color-light-grey;
+            }
+            
+            .social-icons-block {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
-}
 
-.line {
-    width: 100%;
-    height: 1px;
-    margin: 30px 0;
-    background-color: $color-light-grey;
-}
-
-.social-icons-block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.background-block {
-    width: 100%;
-    grid-area: background-block;
-    background-image: url('/public/images/image_summer.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    .background-block {
+        width: 100%;
+        grid-area: background-block;
+        background-image: url('/public/images/image_summer.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }

@@ -11,7 +11,10 @@
 
         li {
             list-style: none;
-            padding: 0 30px;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 30px;
+            padding-right: 0;
 
             a {
                 text-decoration: none;
@@ -21,6 +24,18 @@
                 &:hover {
                     color: $color-black;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    .nav-block {
+        padding-right: 10px;
+
+        ul {
+            li {
+                padding: 0 10px;
             }
         }
     }

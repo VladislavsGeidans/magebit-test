@@ -1,2 +1,60 @@
 @media screen and (max-width: $breakpoint-sm) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .sidebar-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            position: relative;
+
+            .main-block {
+                top: 0;
+                z-index: 1;
+                background: #FFF;
+                margin: 0 20px;
+                padding: 0;
+
+                .subscribe-block {
+                    padding: 30px 20px 0 20px;
+
+                    .input-block {
+                        margin: 0;
+                
+                        input {
+                            padding: 18px 19px;
+                        }
+                
+                        &::after {
+                            margin: 0 20px;
+                        }
+                    }
+                
+                    .checkbox {
+                        margin: 0;
+                    }
+                }
+
+                .line {
+                    display: none;
+                }
+
+                .social-icons-block {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .background-block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            grid-area: none;
+            height: 100vh;
+        }
+    }
 }

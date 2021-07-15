@@ -12,12 +12,40 @@
 
         img {
             position: relative;
-            top: -8px;
-            padding-right: 15px;
+
+            &.union {
+                top: -8px;
+                padding-right: 15px;
+            }
         }
 
         span {
             color: $color-black;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-sm) { 
+    .header-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 21px 0;
+        z-index: 1;
+        background: #FFF;
+        width: 100%;
+
+        .logo-box {
+            padding-left: 20px;
+        }
+
+        .union {
+            top: 0;
+            left: 0;
+        }
+
+        .pineapple_logo {
+            display: none;
         }
     }
 }
