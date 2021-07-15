@@ -1,5 +1,4 @@
-# ODvinksUpdate
-Magebit - Test work
+# Magebit - Test work
 
 How to install local project:
 
