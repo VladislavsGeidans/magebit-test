@@ -10,11 +10,12 @@
         <div class="container">
             <div class="sidebar-block">
                 <div class="header-block">
-                    <div class="logo-box">
-                        <img class="union" src="public/images/Union.png">
-                        <img class="pineapple_logo" src="public/images/pineapple_logo.png">
-                    </div>
-                    
+                    <a href="/">
+                        <div class="logo-box">
+                            <img class="union" src="public/images/Union.png">
+                            <img class="pineapple_logo" src="public/images/pineapple_logo.png">
+                        </div>
+                    </a>
                     
                     <div class="nav-block">
                         <ul>
@@ -27,26 +28,33 @@
     
                 <div class="main-block">
                     <div class="subscribe-block">
-                        <h1>Subscribe to newsletter</h1>
-                        <p>
+                        <img class="union_2 hide" src="public/images/Union_2.png">
+                        <h1 class="heading-box">Subscribe to newsletter</h1>
+
+                        <p class="paragraph-box">
                             Subscribe to our newsletter and get 10% discount on pineapple glasses.
                         </p>
-    
-                        <div class="input-block">
-                            <input type="email" placeholder="Type your email address here…">
-                        </div>
-    
-                        <label class="checkbox">
-                            <span class="checkbox__input">
-                              <input type="checkbox" name="checked">
-                              <span class="checkbox__control">
-                                <img src="public/images/ic_checkmark.svg">
-                              </span>
-                            </span>
-                            <span class="radio__label">I agree to <a href="#">terms of service</a></span>
-                        </label>
+                        
+                        <form class="subscribe-form">
+                            <div class="input-box">
+                                <input type="text" id="email-input" placeholder="Type your email address here…" autocomplete="off">
+                                <input type="submit" id="email-submit" value="">
+                            </div>
+
+                            <span id="error-label" class="hide"></span>
+        
+                            <label class="checkbox">
+                                <span class="checkbox__input">
+                                <input id="terms-checkbox" type="checkbox" name="checked">
+                                <span class="checkbox__control">
+                                    <img src="/public/images/ic_checkmark.svg">
+                                </span>
+                                </span>
+                                <span class="radio__label">I agree to <a href="#">terms of service</a></span>
+                            </label>
+                        </form>  
                     </div>
-    
+
                     <div class="line"></div>
     
                     <div class="social-icons-block">
@@ -61,6 +69,6 @@
             <div class="background-block"></div>
         </div>
         
-        <script src="public/js/main-min.js"></script>
+        <script src="/public/js/main-min.js"></script>
     </body>
 </html>

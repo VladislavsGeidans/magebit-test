@@ -9,3 +9,17 @@
 @import 'layout/mobile_grid';
 @import 'layout/header';
 @import 'layout/navigation';
+
+.hide {
+    display: none;
+}
+
+#error-label {
+    color: red;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px 0;
+}
