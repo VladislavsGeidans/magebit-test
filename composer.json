@@ -1,0 +1,10 @@
+{
+    "name": "vladislavsgeidans/magebit-test",
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}
