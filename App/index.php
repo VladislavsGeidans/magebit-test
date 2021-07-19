@@ -3,8 +3,6 @@
     require '../vendor/autoload.php';
     session_start();
 
-    var_dump($_SESSION);
-
     use App\Controller\SubscriptionController;
 
     $controller = new SubscriptionController();
@@ -22,8 +20,6 @@
         <label for="search-input">Search: </label>
         <input type="text" placeholder="Search..." name="search" id="search-input" value="<?= $_SESSION['searchString']; ?>" autocomplete="off">
         <br/>
-
-        <div class="search-block"></div>
 
         <table>
             <thead>
