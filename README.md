@@ -18,3 +18,5 @@ npm -v
 node-v
 v14.15.5
 ```
+
+Access to summary page: `localhost:3000/app`
